@@ -1,0 +1,396 @@
+/************************************** START of app.blade (master layout)******************************************************/
+
+/*laravel built-in overrides (from auth scaffolding)*/
+html, body {
+    max-width: 100%;
+    height:100%;
+    /*background-color:blue;*/
+}
+body {
+    /*overflow-x: hidden;*/
+    overflow-x:auto;
+    font-family: 'Arial', sans-serif;
+    /*padding-bottom: 50px;  !* in order for the body not to be covered by the fixed footer*/
+    padding-top: 70px; /* in order for the body not to be covered by the fixed header */
+}
+
+
+#wrapper{
+    background-color:#fff;
+    min-height:calc(100% - 60px);/*footer height:60px*/
+}
+
+#content {
+    padding-bottom:20px;
+}
+
+/*------------------------------------------header--------------------------------------*/
+/*logo image*/
+img#logo_image{
+    height:58px;
+    width:68px;
+}
+
+/*navigation bar*/
+.navbar-default {
+    background-color: rgba(0, 60, 111, 0.85);
+    border-color: #ffffff;
+}
+
+.container>.navbar-header {
+    /*default margin override*/
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/*Site Logo Text (CS Unipi Author)*/
+.navbar-default .navbar-brand , .navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #fff;
+}
+
+/*navigation bar links*/
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: orange;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #2a6392;
+}
+/*---------------------------dropdown menu on header (appears on click)----------*/
+
+/*font awesome buttons*/
+.fa-btn {
+    margin-right: 6px;
+}
+
+/*dropdown menu list anchors*/
+
+.dropdown-menu>li>a {
+    color: #154c7a;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover
+{
+    color: orange;
+    text-decoration: none;
+    background-color: #fff;
+}
+/*media queries for dropdown menu*/
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
+        color: orange;
+    }
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a
+    {
+        color: #fff;
+        background-color: transparent;
+    }
+}
+
+/*menu button toggle (for smaller screens)*/
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #154c7a;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #154c7a;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+/*submenu items for mobile*/
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #2a6392;
+}
+
+.navbar-fixed-bottom
+{
+    /*background-color:*/
+
+}
+
+hr#dashboard_horizontal_rule
+{
+     margin-top: 5px;
+     margin-bottom: 5px;
+}
+/*---------------------------------footer--------------------------------------------------------*/
+/*footer bar*/
+.footer
+{
+    height: 60px; /* wrapper div min-height depends on this footer's height */
+    background-color:#083158;
+}
+
+/*copyright paragraph*/
+p#copyright
+{
+    height:50px;
+    text-align:center;
+    color:#cfcfcf;
+    padding:20px 0 20px 0;
+
+}
+@media (max-width:374px){
+p#copyright
+{
+    /*top right bottom left*/
+    padding:0 0 0 0;
+}
+}
+/*copyright links*/
+p#copyright a
+{
+    color:#cfcfcf;
+}
+p#copyright a:hover
+{
+    color:orange;
+    text-decoration:underline;
+}
+
+/**************************************END of app.blade (master layout)******************************************************/
+
+/*--------------------flash messages blade---------------------------------------------------*/
+
+.alert {
+    background: #d4eaca;
+    padding: 10px;
+    color: #3c763d;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    /*text-align: center;*/
+
+}
+
+/*.alert-red {background: #ff1c4a;*/
+/*padding:10px;*/
+/*color:blanchedalmond;*/
+/*}*/
+
+/*--------------------------------------------form errors blade----------------------------------------*/
+
+.error {
+    color: #ff3333;
+}
+
+/*---------------------------------home blade-----------------------------*/
+/*authentication form panels */
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #fedfb5;
+    border-color: #ffe3bd;
+}
+.panel-default {
+    border-color: #fedfb5;
+}
+
+/*home page horizontal list (with a glance)*/
+ul.horizontal li {
+    display: inline-block;
+    padding: 10px 30px;
+    list-style: none;
+}
+ul.horizontal  a{
+    color:#276188;
+}
+ul.horizontal  i{
+    color:#244f73;
+}
+
+/*recent activity*/
+span.recent_detail, span.disk_description{
+    color:#949494;
+}
+a.recent_title{
+    color:#276188;
+}
+span.super_admin, td.super_admin{
+    color:#9c002c;
+}
+
+/*---------------------------------picture disks blade-----------------------------*/
+
+ul.vertical li {
+    padding: 10px 30px;
+    list-style: none;
+}
+ul.vertical  a{
+    color:#276188;
+}
+ul.vertical  i{
+    color:#244f73;
+}
+/*---------------------------------index blades-----------------------------*/
+/*heading inline with form that includes new button */
+h1.heading
+{
+    display: inline-block;
+}
+
+form#new-form
+{
+    margin-left:10px;
+    display: inline-block;
+}
+
+
+/*tables stlyle*/
+.table>thead>tr>th {
+    border-bottom: 2px solid #265984;
+    background-color: #ffecd3;
+}
+table {
+    border: 0px solid #ddd;
+    border-collapse: separate;
+    border-left: 0;
+    border-radius: 2px;
+    border-spacing: 0px;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    border-collapse: separate;
+}
+tr {
+    display: table-row;
+    border-color: inherit;
+}
+th, td {
+    padding: 5px 4px 6px 4px;
+    border-left: 1px solid #ddd;
+}
+td {
+    border-top: 1px solid #ddd;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    text-align:center;
+    vertical-align: middle;
+}
+thead:first-child tr:first-child th:first-child, tbody:first-child tr:first-child td:first-child {
+    border-radius: 4px 0 0 0;
+}
+thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td:first-child {
+    border-radius: 0 0 0 4px;
+}
+
+/*pagination*/
+div#pagination
+{
+    text-align: center;
+}
+
+/*bootstrap buttons override*/
+.btn{
+    border-radius:2px;
+    padding: 5px 10px;
+}
+
+/*search input*/
+input#search_input
+{
+    /*margin-top:33px;*/
+    display:inline-block;
+    font-family: Arial, FontAwesome, sans-serif;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    border-radius:4px;
+    border-color:#ccd9e4;
+    margin-bottom:15px;
+}
+
+/*hide search button on mobile*/
+@media (max-width: 768px) {
+    button#submit_search
+    {
+        display:none;
+    }
+}
+
+/*---------------------------------form blades-----------------------------*/
+
+/*people avatars*/
+img.avatar{
+max-width: 50px;
+max-height: 50px;
+}
+
+/*pictures index*/
+img.picture{
+    max-width: 80px;
+    max-height: 80px;
+}
+
+/*pictures show*/
+img.picture_zoom
+{
+    max-width: 400px;
+    max-height:400px;
+}
+
+.form-control{
+    /*display:inline-block*/
+}
+
+/*labels for form elements*/
+@media (min-width: 768px) {
+    .form-horizontal .control-label {
+        padding-top: 0px;
+        /*margin-bottom: 0;*/
+        /*text-align: right;*/
+    }
+}
+
+/*labels for required form elements*/
+label.required:after {
+    content:" * ";
+    color:#f1215c;
+}
+
+/*div's in forms for group of elements*/
+div.form_image_area, div.form_category_area
+{
+    border: 3px solid #fabb3a;
+    border-radius: 25px;
+    /*background-color:#ffe9e4;*/
+    padding-bottom:10px;
+    margin-bottom:15px;
+}
+
+p.explanatory_text
+{
+    text-align:center;
+    white-space: normal;
+    color:#949494;
+}
+
+p.explanatory_text_uncentered
+{
+    white-space: normal;
+    color:#949494;
+}
+
+/*gray normal label*/
+label.unbold
+{
+    font-weight:100;
+    /*white-space: normal;*/
+    color: #949494;
+}
+
+
+
+
+
+
+
+
+
+
