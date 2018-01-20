@@ -29,7 +29,7 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    { 
         //count table records
         $articles_count = Article::count();;
         $pages_count = Page::count();;
