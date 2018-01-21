@@ -21,7 +21,8 @@ class CreatePagesTable extends Migration {
 			$table->text('title', 65535);
 			$table->text('content', 65535);
 			$table->integer('views')->unsigned()->default(0);
-			$table->timestamps();
+			$table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+			$table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
 		});
 	}
 

@@ -24,7 +24,8 @@ class CreateArticlesTable extends Migration {
 			$table->integer('downloads')->unsigned()->default(0);
 			$table->enum('attachement', array('0','1'))->default('0');
 			$table->integer('views')->unsigned()->default(0);
-			$table->timestamps();
+			$table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+			$table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
 			$table->unique(['alias','category'], 'unique_index');
 		});
 	}
