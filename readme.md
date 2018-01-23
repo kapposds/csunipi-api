@@ -1,5 +1,6 @@
-# CS Unipi API & Author ![alt text](https://github.com/kapposds/csunipi-api/blob/master/public/images/logos/cs_unipi_author_logo.png)
+# CS Unipi API & Author 
 
+![alt text](https://github.com/kapposds/csunipi-api/blob/master/public/images/logos/cs_unipi_author_logo.png)
 description, features?
 
 ## Server Requirements
