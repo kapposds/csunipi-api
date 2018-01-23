@@ -1,27 +1,46 @@
-# Laravel PHP Framework
+# CS Unipi API & Author
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+## Server Requirements
 
-## Official Documentation
+ Your server must meet the following requirements in order to run the app developed with Laravel 5.2 version:
+* PHP >= 5.5.9
+* OpenSSL PHP Extension
+* PDO PHP Extension
+* Mbstring PHP Extension
+* Tokenizer PHP Extension
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+Laravel utilizes Composer as its dependency manager. So, make sure you have Composer (https://getcomposer.org/) installed on your machine.
 
-## Contributing
+For more info check the official documentation: https://laravel.com/docs/5.2/installation
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+## Installation
+Open a terminal and navigate to your projects directory by typing `cd PATH/TO/PROJECTS/DIRECTORY`(i.e. xampp/htdocs , if you use apache as local webserver)
+* type `git clone https://github.com/kapposds/csunipi-api yourprojectname` to clone the repository
+* type `cd projectname` to go to cloned project directory
+* type `composer install` to install dependencies
+* type `composer update` to get latest dependencies versions
+* copy *.env.example* to *.env* (if you are having trouble creating the file, try doing it in text editor i.e. sublime https://www.sublimetext.com/3)
+* type `php artisan key:generate`to regenerate secure key
 
-## Security Vulnerabilities
+Create an empty database (I used utf8_unicode_ci collation).
+* I used MySQL and phpmyadmin (included in xampp installation) as my administration tool. To configure database in *.env* file :
+   * set DB_CONNECTION (i.e. mysql)
+   * set DB_DATABASE (i.e. yourdb)
+   * set DB_USERNAME (i.e. yourusername)
+   * set DB_PASSWORD (i.e. yourpassword)
+* type `php artisan migrate --seed` to create and populate tables
+* edit *.env* to configure mail server
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+## Testing
+
+
+
+## Bug Reports
+
+If you discover bug within CS Unipi Api & Author, please send an e-mail to Alexandros Kappos at kapposds@gmail.com.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
