@@ -34,7 +34,7 @@ First step to get database ready: create an empty database (I used utf8_unicode_
    * set DB_DATABASE (i.e. yourdb)
    * set DB_USERNAME (i.e. yourusername)
    * set DB_PASSWORD (i.e. yourpassword)
-* type `php artisan migrate --seed` to create and populate tables
+* type `php artisan migrate --seed` to create and populate tables. For more migration commands visit https://laravel.com/docs/5.2/migrations#running-migrations
 * edit *.env* to configure mail server
 
 ## Testing
