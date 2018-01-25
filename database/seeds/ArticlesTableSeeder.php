@@ -14,7 +14,7 @@ class ArticlesTableSeeder extends Seeder
     {
         
 
-        \DB::table('articles')->delete();
+        // \DB::table('articles')->delete();
         
         \DB::table('articles')->insert(array (
             0 => 

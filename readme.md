@@ -35,7 +35,12 @@ First step to get database ready: create an empty database (I used utf8_unicode_
 
 ## Testing
 
-use..
+* type `php artisan serve` to serve the application on localhost:8000 address by default. specify --host or --port for different values
+* open your browser and point it to `http://localhost:8000` to use the application. Stop the server by pressing `Ctrl + C` in your command line.
+* use the following dummy user credentials to log in to the app:
+	* E-mail: csunipi_dummyuser@gmail.com
+	* Password (Κωδικός): csunipi
+
 
 ## Bug Reports
 

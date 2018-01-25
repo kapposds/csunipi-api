@@ -14,7 +14,7 @@ class SubmenuitemsTableSeeder extends Seeder
     {
         
 
-        \DB::table('submenuitems')->delete();
+        // \DB::table('submenuitems')->delete();
         
         \DB::table('submenuitems')->insert(array (
             0 => 
