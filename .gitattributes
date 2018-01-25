@@ -2,6 +2,5 @@
 *.css linguist-vendored
 *.scss linguist-vendored
 *.rb linguist-language=PHP
-*.js linguist-vendored
 *.blade linguist-documentation
 *.blade.php linguist-documentation
