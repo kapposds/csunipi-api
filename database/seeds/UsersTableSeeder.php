@@ -14,13 +14,13 @@ class UsersTableSeeder extends Seeder
     	DB::table('users')->delete();
     	
         DB::table('users')->insert([
-            'name' => 'Dummy User',
+            'name' => 'Dummy Admin',
             'email' => 'csunipi_dummy_admin@gmail.com',
             'password' => bcrypt('csunipi'),
         ]);
 
         DB::table('users')->insert([
-            'name' => 'Dummy User',
+            'name' => 'Dummy Super Admin',
             'email' => 'csunipi_dummy_superadmin@gmail.com',
             'password' => bcrypt('csunipi'),
         ]);        
