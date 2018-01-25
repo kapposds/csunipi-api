@@ -1,6 +1,6 @@
 # CS Unipi API & Author <img src="https://github.com/kapposds/csunipi-api/blob/master/public/images/logos/cs_unipi_author_logo.png" width="85" height="70" />
 
-description, features?
+Part of Bachelors Thesis. Underlying back-end API and authoring platform (CRUD) with a simple interface used by the University of Piraeus, Computer Science faculty administrators in order to manage the contents (articles, pages, people, images) available to the faculty's hybrid mobile app (CS Unipi Mobile https://github.com/kapposds/csunipi-mobile). They can also edit their profile, and super admins can manage other admins. The application is only in Greek.
 
 ## Server Requirements
 
@@ -35,12 +35,14 @@ First step to get database ready: create an empty database (I used utf8_unicode_
 
 ## Testing
 
-* type `php artisan serve` to serve the application on localhost:8000 address by default. specify --host or --port for different values
+* type `php artisan serve` to serve the application on `localhost:8000` address by default. Optionally use --host or --port parameters to specify address , port
 * open your browser and point it to `http://localhost:8000` to use the application. Stop the server by pressing `Ctrl + C` in your command line.
-* use the following dummy user credentials to log in to the app:
-	* E-mail: csunipi_dummyuser@gmail.com
+* use the following dummy <b>administrator</b> credentials to log in:
+	* E-mail: csunipi_dummy_admin@gmail.com
 	* Password (Κωδικός): csunipi
-
+* use the following dummy <b> super administrator</b> credentials to log in and be able to manage other users:
+	* E-mail: csunipi_dummy_superadmin@gmail.com
+	* Password (Κωδικός): csunipi
 
 ## Bug Reports
 
