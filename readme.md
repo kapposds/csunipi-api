@@ -1,6 +1,10 @@
 # CS Unipi API & Author <img src="https://github.com/kapposds/csunipi-api/blob/master/public/images/logos/cs_unipi_author_logo.png" width="85" height="70" />
 
-Part of Bachelors Thesis. Underlying back-end API and authoring platform (CRUD) with a simple interface used by the University of Piraeus, Computer Science faculty administrators in order to manage the contents (articles, pages, people, images) available to the faculty's hybrid mobile app (CS Unipi Mobile https://github.com/kapposds/csunipi-mobile). They can also edit their profile, and super admins can manage other admins. The application is only in Greek.
+Part of Bachelors Thesis. Underlying back-end API and authoring platform (CRUD) with a simple interface used by the University of Piraeus, Computer Science faculty administrators.
+
+Through this application, admins can manage the contents (articles, pages, people, images) available to the faculty's hybrid mobile app (CS Unipi Mobile https://github.com/kapposds/csunipi-mobile). They can also edit their profile, and super admins can manage other admins. 
+
+The application is only in Greek.
 
 ## Server Requirements
 
