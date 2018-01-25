@@ -26,7 +26,7 @@ Open a terminal and navigate to your projects directory by typing `cd relative/p
 * type `composer install` to install dependencies
 * type `composer update` to get latest dependencies versions
 * copy *.env.example* to *.env* (if you are having trouble creating the file, try doing it in text editor i.e. sublime https://www.sublimetext.com/3)
-* type `php artisan key:generate`to regenerate secure key
+* type `php artisan key:generate`to regenerate secure key (make sure that a long string is assigned to the APP_KEY variable in .env file)
 
 First step to get database ready: create an empty database (I used utf8_unicode_ci collation). I used MySQL and phpmyadmin (included in xampp installation) as my administration tool.
 * To configure database in *.env* file :
