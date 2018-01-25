@@ -1,4 +1,4 @@
-# CS Unipi API & Author ![Logo](https://github.com/kapposds/csunipi-api/blob/master/public/images/logos/cs_unipi_author_logo.png )
+# CS Unipi API & Author ![Logo](https://github.com/kapposds/csunipi-api/blob/master/public/images/logos/cs_unipi_author_logo.png =85x70)
 
 description, features?
 
