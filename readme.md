@@ -1,14 +1,14 @@
 # CS Unipi API & Author <img src="https://github.com/kapposds/csunipi-api/blob/master/public/images/logos/cs_unipi_author_logo.png" width="85" height="70" />
 
-Part of Bachelors Thesis. Underlying back-end API and authoring platform (CRUD) with a simple interface used by the University of Piraeus, Computer Science faculty administrators.
+Part of Bachelors Thesis. Underlying back-end API and authoring platform (CRUD) with a simple user interface used by the University of Piraeus, Computer Science department administrators.
 
-Through this application, admins can manage the contents (articles, pages, people, images) available to the faculty's hybrid mobile app (CS Unipi Mobile https://github.com/kapposds/csunipi-mobile). They can also edit their profile, and super admins can manage other admins. 
+Through this application, admins can manage the contents (articles, pages, people, images) available to the department's hybrid mobile app (CS Unipi Mobile https://github.com/kapposds/csunipi-mobile). They can also edit their profile, and super admins can manage other admins. 
 
 The application is only in Greek.
 
-## Server Requirements
+## System Requirements
 
- Your server must meet the following requirements in order to run the app developed with Laravel 5.2 version:
+ Your system must meet the following requirements in order to build the app developed with Laravel 5.2 version:
 * PHP >= 5.5.9
 * OpenSSL PHP Extension
 * PDO PHP Extension
