@@ -7,13 +7,16 @@ Through this application, admins can manage the contents (articles, pages, peopl
 The application is only in Greek.
 
 ## System Requirements
+You need to install a web server, such as Apache, and of course PHP. Also its required to install a database as well, such as  MySQL.
 
- Your system must meet the following requirements in order to build the app developed with Laravel 5.2 version:
+Your system must meet the following requirements in order to build the app developed with Laravel 5.2 version:
 * PHP >= 5.5.9
 * OpenSSL PHP Extension
 * PDO PHP Extension
 * Mbstring PHP Extension
 * Tokenizer PHP Extension
+
+The above requirements are included in xampp package https://www.apachefriends.org/download.html
 
 Laravel utilizes Composer as its dependency manager. So, make sure you have Composer (https://getcomposer.org/) installed on your machine.
 
