@@ -39,12 +39,12 @@ First step to get database ready: create an empty database (I used utf8_unicode_
    * set DB_PASSWORD (i.e. yourpassword)
 * type `php artisan migrate --seed` to create and populate tables. For more migration commands visit https://laravel.com/docs/5.2/migrations#running-migrations
 *To configure mail server:
-   * MAIL_HOST (i.e. smtp.gmail.com)
-   * MAIL_PORT  (i.e. 587 or 25)
-   * MAIL_USERNAME  (i.e. your@mailaddress.com)
-   * MAIL_PASSWORD (i.e. yourpassword)
-   * MAIL_FROM_ADDRESS (i.e. emailaddress@youwanttoappeartouser.com) 
-   * MAIL_FROM_NAME (i.e.'CS Unipi Author' or whatever Name you want to appear when a user recieves a mail from the app)    
+   * set MAIL_HOST (i.e. smtp.gmail.com)
+   * set MAIL_PORT  (i.e. 587 or 25)
+   * set MAIL_USERNAME  (i.e. your@mailaddress.com)
+   * set MAIL_PASSWORD (i.e. yourpassword)
+   * set MAIL_FROM_ADDRESS (i.e. emailaddress@youwanttoappeartouser.com) 
+   * set MAIL_FROM_NAME (i.e.'CS Unipi Author' or whatever Name you want to appear when a user recieves a mail from the app)    
 	
 * Dont forget to allow less secure apps to use the mail, from your e-mail server settings (i.e. https://mail.google.com)
 
