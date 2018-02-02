@@ -55,7 +55,10 @@ return [
     |
     */
 
-    'from' => ['address' => 'kapposds.test@gmail.com', 'name' => 'CS Unipi Author'],
+   'from' => [
+        'address' => env('MAIL_FROM_ADDRESS', 'csunipi.author@gmail.com'),
+        'name' => env('MAIL_FROM_NAME', 'CS Unipi Author'),
+    ],
 
     /*
     |--------------------------------------------------------------------------
