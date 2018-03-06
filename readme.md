@@ -65,4 +65,4 @@ If you discover bug within CS Unipi Api & Author, please send an e-mail to Alexa
 
 ## License
 
-mit?
+The current application is licensed under the [MIT license](https://opensource.org/licenses/MIT).
