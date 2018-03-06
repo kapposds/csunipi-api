@@ -86,6 +86,13 @@ class UserController extends Controller
 
     public function update(UpdateUser $request, User $user)
     {
+
+        //if edited user is super admin , return unauthorized error
+        if($user->super_admin =='1')
+        {
+            return response()->view('errors.401', [], 401);
+        }        
+        
         //if password field is empty dont patch it
         if (Input::get ('password') == '') {
             $user->update (Input::except ('password'));
@@ -93,12 +100,6 @@ class UserController extends Controller
         else {
             $request->merge(['password' => Hash::make($request->password)]);
             $user->update($request->all());
-        }
-
-        //if edited user is super admin , return unauthorized error
-        if($user->super_admin =='1')
-        {
-            return response()->view('errors.401', [], 401);
         }
 
         session()->flash('flash_message','Ο χρήστης "'.$user->name.'" ενημερώθηκε επιτυχώς!');
