@@ -50,7 +50,7 @@ First step to get database ready: create an empty database (I used utf8_unicode_
 
 ## Testing
 
-* type `php artisan serve` to serve the application on `localhost:8000` address by default. Optionally use --host or --port parameters to specify address , port
+* type `php artisan serve` to serve the application on `localhost:8000` address by default. In case you want to make the API available withitn your network use --host= or --port= parameters to specify address and port (its recommended to use your Private IP Address if you want to access the API from a mobile device i.e. 192.168.1.3:80)
 * open your browser and point it to `http://localhost:8000` to use the application. Stop the server by pressing `Ctrl + C` in your command line.
 * use the following dummy <b>administrator</b> credentials to log in:
 	* E-mail: csunipi_dummy_admin@gmail.com
