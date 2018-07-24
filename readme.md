@@ -26,7 +26,7 @@ For more info check the official documentation: https://laravel.com/docs/5.2/ins
 Open a terminal and navigate to your projects directory by typing `cd relative/path/to/projects/directory`(i.e. xampp/htdocs , if you use apache as local webserver)
 * type `git clone https://github.com/kapposds/csunipi-api yourprojectname` to clone the repository
 * type `cd projectname` to go to cloned project directory
-* type `composer install` to install dependencies, if you encounter dependency problems try `composer install --no-dev` instead
+* type `composer install` to install dependencies, if you encounter dependency problems try `composer install --no-dev` instead. Also make sure that you don't assign values with whitespaces outside of quotes in .env file (i.e. CS Unipi Author not valid, but "CS Unipi Author" is ok). If you still encounter errors try the `composer dumpautoload` command.
 * type `composer update` to get latest dependencies versions
 * copy *.env.example* to *.env* (if you are having trouble creating the file, try doing it in text editor i.e. sublime https://www.sublimetext.com/3)
 * type `php artisan key:generate`to regenerate secure key (make sure that a long string is assigned to the APP_KEY variable in .env file)
@@ -47,7 +47,7 @@ First step to get database ready: create an empty database (I used utf8_unicode_
    * set MAIL_FROM_NAME (i.e.'CS Unipi Author' or whatever Name you want to appear when a user recieves a mail from the app)    
 	
 * Dont forget to allow less secure apps to use the mail, from your e-mail server settings (i.e. https://mail.google.com)
-
+* And also remember to run `php artisan config:cache` after making changes to your .env (environment variables). 
 ## Testing
 
 * type `php artisan serve` to serve the application on `localhost:8000` address by default. In case you want to make the API available withitn your network use --host= or --port= parameters to specify address and port (its recommended to use your Private IP Address if you want to access the API from a mobile device i.e. 192.168.1.3:80)
