@@ -50,6 +50,9 @@ class Person extends Model
             case "president":
                 $rank_name='Πρόεδρος Τμήματος';
                 break;
+            case "backup-president":
+                $rank_name='Αναπληρωτής Πρόεδρος Τμήματος';
+                break;
             case "professors":
                 $rank_name='Καθηγητής';
                 break;

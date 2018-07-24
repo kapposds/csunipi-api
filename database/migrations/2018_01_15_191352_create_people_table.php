@@ -17,7 +17,7 @@ class CreatePeopleTable extends Migration {
 			$table->integer('id', true);
 			$table->string('alias');
 			$table->string('category')->index('people_category_foreignkey_pages_alias');
-			$table->enum('rank', array('president','professors','associate-professors','assistant-professors','lecturers','professors-emeriti','secretariat'));
+			$table->enum('rank', array('president','backup-president','professors','associate-professors','assistant-professors','lecturers','professors-emeriti','secretariat'));
 			$table->string('fullname');
 			$table->string('tags');
 			$table->string('avatar')->default('default.jpg');

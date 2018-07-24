@@ -56,7 +56,7 @@
                                     <td>{{$person->fullname}}</td>
                                     <td><img class="avatar" src="/images/people/{{$person->avatar}}"></td>
                                     <td>{{$person->page->viewtitle}}</td>
-                                    <td @if($person->rank=='president') style="color:red;" @endif>{{$person->getRankName($person->rank)}}</td>
+                                    <td @if($person->rank=='president' || $person->rank =='backup-president' ) style="color:red;" @endif>{{$person->getRankName($person->rank)}}</td>
                                     <td>{{date('d/m/Y H:i', strtotime($person->created_at))}}</td>
                                     <td>{{date('d/m/Y H:i', strtotime($person->updated_at))}}</td>
                                     <td><form method="get" action="/people/{{$person->id}}"><button class="btn btn-info">Προβολή</button></form></td>

@@ -38,7 +38,7 @@ class PeopleTableSeeder extends Seeder
             1 => 
             array (
                 'id' => 2,
-                'alias' => 'geoatsi-president',
+                'alias' => 'geoatsi',
                 'category' => 'professors',
                 'rank' => 'president',
                 'fullname' => 'Τσιχριντζής Γεώργιος ',
@@ -274,7 +274,7 @@ class PeopleTableSeeder extends Seeder
                 'id' => 17,
                 'alias' => 'vergados',
                 'category' => 'professors',
-                'rank' => 'associate-professors',
+                'rank' => 'backup-president',
                 'fullname' => 'Βέργαδος Δημήτριος',
                 'tags' => 'βεργαδος δημητρης δημητριος dimitris dimitrios',
                 'avatar' => 'vergados.jpg',
@@ -665,6 +665,24 @@ class PeopleTableSeeder extends Seeder
                 'created_at' => '2017-03-30 17:00:30',
                 'updated_at' => '2017-03-30 17:00:30',
             ),
+            36 => 
+            array (
+                'id' => 137,
+                'alias' => 'backup-president',
+                'category' => 'professors',
+                'rank' => 'backup-president',
+                'fullname' => 'Αναπληρωτής Πρόεδρος Τμήματος',
+                'tags' => '',
+                'avatar' => '',
+                'location' => NULL,
+                'office_hours' => NULL,
+                'phone_number' => NULL,
+                'email' => NULL,
+                'website' => NULL,
+                'divider' => '1',
+                'created_at' => '2016-12-27 15:06:56',
+                'updated_at' => '2017-03-24 14:10:06',
+            ),            
         ));
         
         
