@@ -47,7 +47,7 @@ First step to get database ready: create an empty database (I used utf8_unicode_
    * set MAIL_FROM_NAME (i.e.'CS Unipi Author' or whatever Name you want to appear when a user recieves a mail from the app)    
 	
 * Dont forget to allow less secure apps to use the mail, from your e-mail server settings (i.e. https://mail.google.com)
-
+* And also remember to run `php artisan config:cache` after making changes to your .env (environment variables). 
 ## Testing
 
 * type `php artisan serve` to serve the application on `localhost:8000` address by default. In case you want to make the API available withitn your network use --host= or --port= parameters to specify address and port (its recommended to use your Private IP Address if you want to access the API from a mobile device i.e. 192.168.1.3:80)
