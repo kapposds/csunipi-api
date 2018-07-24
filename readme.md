@@ -26,7 +26,7 @@ For more info check the official documentation: https://laravel.com/docs/5.2/ins
 Open a terminal and navigate to your projects directory by typing `cd relative/path/to/projects/directory`(i.e. xampp/htdocs , if you use apache as local webserver)
 * type `git clone https://github.com/kapposds/csunipi-api yourprojectname` to clone the repository
 * type `cd projectname` to go to cloned project directory
-* type `composer install` to install dependencies, if you encounter dependency problems try `composer install --no-dev` instead
+* type `composer install` to install dependencies, if you encounter dependency problems try `composer install --no-dev` instead. Also make sure that you don't assign values with whitespaces outside of quotes in .env file (i.e. CS Unipi Author not valid, but "CS Unipi Author" is ok). If you still encounter errors try the `composer dumpautoload` command.
 * type `composer update` to get latest dependencies versions
 * copy *.env.example* to *.env* (if you are having trouble creating the file, try doing it in text editor i.e. sublime https://www.sublimetext.com/3)
 * type `php artisan key:generate`to regenerate secure key (make sure that a long string is assigned to the APP_KEY variable in .env file)
